@@ -1,4 +1,4 @@
-# # 1
+# 1
 # # In cadrul unui comentariu, explicati cu cuvintele voastre ce este o variabila
 # # O variabila este un spatiu de stocare (in memorie) pe care il putem eticheta (initializa) si in care putem adauga diverse tipuri de date (sau sa-i dam valori)
 #
