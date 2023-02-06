@@ -228,6 +228,9 @@
 # for list in tastatura_telefon:
 #     for number in list:
 #         print(f'Cifra curenta este {number}')
+#
+#
+# test
 
 
 
