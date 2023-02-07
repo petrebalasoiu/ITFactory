@@ -173,9 +173,6 @@
 # y = password('Type the password: \n')
 # print(f'The password for the user {user_name} is {len(password) * "*"} and has {len(password)} characters.')
 
-# # 6 (optional)
-# test this push
-
 
 
 
