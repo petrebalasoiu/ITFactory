@@ -1,7 +1,7 @@
 # # 1
 # # Briefly explain in your own words how does an if/else statement work.
 # # An if/else statement runs a certain part of the code if the condition is True or a separate part of the code if the condition is False.
-#
+#########
 # # 2
 # # Verifica si afiseaza daca x este numar natural sau nu (un numar se considera natural daca este numar intreg mai mare ca 0)
 # x = int(input('Introdu numar: '))
