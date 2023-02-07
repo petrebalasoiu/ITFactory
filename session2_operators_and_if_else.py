@@ -1,9 +1,6 @@
-# # Pentru toate exercitiile se va folosi notiunea de if in rezolvare. Indirect veti exersa si operatorii in cadrul conditiilor ramurilor din if
-# # Variabila X specificata in exercitiile de mai jos poate fi initializata direct in cod sau citita de la tastatura, dupa preferinte si va fi o variabila int
-#
 # # 1
-# # Explica cu cuvintele tale in cadrul unui comentariu cum functioneaza un if else
-# if else sunt conditii care controleaza flow-ul codului sau ordinea lui de compilare
+# # Briefly explain in your own words how does an if/else statement work.
+# # An if/else statement runs a certain part of the code if the condition is True or a separate part of the code if the condition is False.
 #
 # # 2
 # # Verifica si afiseaza daca x este numar natural sau nu (un numar se considera natural daca este numar intreg mai mare ca 0)
