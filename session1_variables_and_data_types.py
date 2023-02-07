@@ -156,7 +156,8 @@
 # char_bot = str[-1]
 # char_mid = str[1:-1]
 # print(f'The modified string is: {char_top}{char_mid.replace(char_top, char_top.upper())}{char_bot}')
-#
+
+
 # # 5 (optional)
 # # Take a username and a password from input.
 # # Display example: "The user's password is ****** and contains 6 characters." (the stars update dynamically)
