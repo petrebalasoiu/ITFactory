@@ -1,113 +1,131 @@
 # # 1
 # # Briefly explain in your own words how does an if/else statement work.
 # # An if/else statement runs a certain part of the code if the condition is True or a separate part of the code if the condition is False.
-#########
+
+
 # # 2
-# # Verifica si afiseaza daca x este numar natural sau nu (un numar se considera natural daca este numar intreg mai mare ca 0)
-# x = int(input('Introdu numar: '))
+# # Take an integer from input and verify if it is a natural number or not.
+# #
+# x = int(input('Choose a number: '))
 # if x >= 0:
-#     print('Numarul este natural')
+#     print('The number is natural')
 # else:
-#     print('Numarul nu este natural')
-#
+#     print('The number is not natural')
+
+
 # # 3
-# # Verifica si afiseaza daca x este numar pozitiv, negativ sau neutru
-# x = int(input('Introdu numar: '))
+# # Take an integer from input and verify if it is positive, negative or neutral.
+# #
+# x = int(input('Choose a number: '))
 # if x < 0:
-#     print('negativ')
+#     print('negative')
 # elif x == 0:
-#     print('neutru')
+#     print('neutral')
 # else:
-#     print('pozitiv')
-#
+#     print('positive')
+
+
 # # 4
-# # Verifica si afiseaza daca x este intre -2 si 13 (incluzand captele de interval).
-# x = int(input('Introdu numar: '))
+# # Take an integer from input and verify if it can be found between -2 and 13 including the start and end values.
+# #
+# # _________ Solution A: with the range method _________
+# #
+# x = int(input('Choose number: '))
 # if x in range(-2, 14):
-#     print('Se afla in numerotare')
+#     print('The number is within the range')
 # else:
-#     print('Nu se afla in numerotare')
-# ______sau______
-# x = int(input('Introdu numar: '))
+#     print('The number is outside the range')
+# #
+# # _________ Solution B: with comparisons _________
+# #
+# x = int(input('Choose number: '))
 # if x >= -2 and x <= 13:
-#     print('Se afla in numerotare')
+#     print('The number is within the range')
 # else:
-#     print('Nu se afla in numerotare')
-#
+#     print('The number is outside the range')
+
+
 # # 5
-# # Verifica si afiseaza daca diferenta dintre x si y este mai mica de 5 (diferenta inseamna cate numere sunt intre x si y, nu rezultatul diferentei intre x si y). Hint: Se va folosi functia abs()
-# x = int(input())
-# y = int(input())
-# if abs(x) - abs(y) <= 5:
-#     print('diferenta este 5 sau mai mica')
+# # Take two integers from separate inputs and verify if the difference between them is smaller than 5.
+# # The difference here refers to how many numbers are between them and not their subtraction. Hint: Use the abs() function.
+# #
+# x = int(input('Choose variable \'x\': '))
+# y = int(input('Choose variable \'y\': '))
+# if abs(x - y) <= 5:
+#     print('The difference smaller or equal to 5')
 # else:
-#     print('diferenta este mai mare')
-#
+#     print('The difference is larger than 5')
+
+
 # # 6
-# # Verifica daca x NU este intre 5 si 27, incluzand capetele de interval. (a se folosi ‘not’)
-# x = int(input('Insert number: '))
+# # Take an integer from input and verify that it cannot be found between 5 and 27 including the start and end values (use 'not').
+# #
+# # _________ Solution A: with the range method _________
+# #
+# x = int(input('Choose a number: '))
 # if x not in range(5, 28):
-#     print(x, 'nu este in interval')
+#     print('The number is not within the range')
 # else:
-#     print(x, 'se afla in interval')
-# ______sau______
-# x = int(input('Introdu numar: '))
-# if not (x >= 5 and x <= 27):
-#     print(x, 'nu este in interval')
+#     print('The number is inside the range')
+# #
+# # _________ Solution B: with comparisons _________
+# #
+# x = int(input('Choose a number: '))
+# if not (5 <= x <= 27):
+#     print('The number is not within the range')
 # else:
-#     print(x, 'se afla in interval')
-#
+#     print('The number is inside the range')
+
+
 # # 7
-# # Declara o noua variabila y de tip int si apoi verifica si afiseaza daca x si y sunt egale, daca nu, afiseaza care din ele este mai mare
+# # Take two integers from separate inputs and verify if they are equal, and if not display the highest one.
 # x = int(input('x = '))
-# if not (x >= 5 and x <= 27):
-#     print(x, 'nu este in interval')
-# else:
-#     print(x, 'se afla in interval')
 # y = int(input('y = '))
 # if x == y:
-#     print('sunt egale')
+#     print('They are equal')
 # elif x > y:
-#     print(f'{x} este mai mare')
+#     print(f'x ({x}) is higher')
 # else:
-#     print(f'{y} este mai mare')
-#
+#     print(f'y ({y}) is higher')
+
+
 # # 8
-# # Presupunand ca x, y, z (toate de tip int) - reprezinta laturile unui triunghi, afiseaza daca triunghiul este isoscel (doua laturi sunt egale), echilateral (toate laturile sunt egale) sau oarecare (nicio latura nu e egala).
-# x = int(input('Latura x: '))
-# y = int(input('Latura y: '))
-# z = int(input('Latura z: '))
+# # Three integers from separate inputs represent the sides of a triangle. Display if the triangle is either equilateral, scalene or isosceles.
+# #
+# x = int(input('Side x: '))
+# y = int(input('Side y: '))
+# z = int(input('Side z: '))
 # if x == y == z:
-#     print('Echilateral')
+#     print('The triangle is equilateral')
 # elif x != y != z:
-#     print('Oarecare')
+#     print('The triangle is scalene')
 # else:
-#     print('Isoscel')
-#
+#     print('The triangle is isosceles')
+
+
 # # 9
-# # Citeste o litera de la tastatura apoi verifica si afiseaza daca este vocala sau nu. Atentie! Trebuie sa evaluati si cazurile uppercase si cazurile lowercase.
-# x = str(input('Introdu litera: '))
-# if x == 'a' or 'e' or 'i' or 'o' or 'u' or 'A' or 'E' or 'I' or 'O' or 'U':
-#     print('vocala')
+# # Take a letter as input then verify and display if it's a vocal or not. Find a solution for the uppercase and lowercase scenarios as well.
+# #
+# x = str(input('Choose a letter: ')).lower()
+# if x == 'a' or x == 'e' or x == 'i' or x == 'o':
+#     print('The letter is a vocal')
 # else:
-#     print('consoana')
-# ______sau______
-# x = str(input('Introdu litera: ')).lower()
-# if x == 'a' or 'e' or 'i' or 'o':
-#     print('vocala')
-# else:
-#     print('consoana')
-#
+#     print('The letter is not a vocal')
+
+
 # # 10
-# # Transforma si printeaza notele din sistem românesc in sistem american dupa cum urmeaza:
-# # Peste 9 => A
-# # b. Peste 8 => B
-# # c. Peste 7 => C
-# # d. Peste 6 => D
-# # e. Peste 4 => E
-# # f. 4 sau sub => F
-# x = int(input('Introdu cifra: '))
-# if x <= 4:
+# # Transform and print the grades (1-10) form the Romanian educational system to the American one, as follows:
+# # a. 9 and 10: A
+# # b. Above 8: B
+# # c. Above 7: C
+# # d. Above 6: D
+# # e. Above 4: E
+# # f. 4 and Below: F
+# #
+# x = int(input('Choose a Romanian grade (number): '))
+# if not (4 <= x <= 10):
+#     print('Invalid grade')
+# elif x <= 4:
 #     print('F')
 # elif x == 5:
 #     print('E')
@@ -117,20 +135,21 @@
 #     print('C')
 # elif x == 8:
 #     print('B')
-# elif x <= 10:
+# elif x >= 10:
 #     print('A')
-# else:
-#     print('Numar prea mare')
-#
-# # 1 (optional)
-# # Verifica daca x are minim 4 cifre (ex: 7895 are 4 cifre, 10 nu are minim 4 cifre)
-# x = input('Numar: ')
-# if len(x) <= 4:
-#     print(x, 'are pana in 4 cifre')
-# else:
-#     print(x, 'are mai mult de 4 cifre')
-#
-# # 2 (optional)
+
+
+# # 11
+# # Take a number as input and verify if it has a minimum of 4 digits.
+# #
+x = input('x = ')
+if len(x) <= 4:
+    print('The number has less than or 4 digits')
+else:
+    print('The number has more than 4 digits')
+
+
+# # 12
 # # Verifica daca x are exact 6 cifre
 # x = input('Numar: ')
 # if len(x) == 6:
