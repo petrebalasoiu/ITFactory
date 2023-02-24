@@ -79,6 +79,7 @@
 
 # # 7
 # # Take two integers from separate inputs and verify if they are equal, and if not display the highest one.
+# #
 # x = int(input('x = '))
 # y = int(input('y = '))
 # if x == y:
@@ -142,151 +143,140 @@
 # # 11
 # # Take a number as input and verify if it has a minimum of 4 digits.
 # #
-x = input('x = ')
-if len(x) <= 4:
-    print('The number has less than or 4 digits')
-else:
-    print('The number has more than 4 digits')
+# x = input('x = ')
+# if len(x) <= 4:
+#     print('The number has less than or 4 digits')
+# else:
+#     print('The number has more than 4 digits')
 
 
 # # 12
-# # Verifica daca x are exact 6 cifre
-# x = input('Numar: ')
+# # Take a number as input and verify if it has exactly 6 digits.
+# #
+# x = input('Choose a number: ')
 # if len(x) == 6:
-#     print('ARE 6 cifre')
+#     print('The number has exactly 6 digits')
 # else:
-#     print('NU are 6 cifre')
-#
-# # 3 (optional)
-# # Verifica daca x este numar par sau impar
-# x = int(input('Numar: '))
+#     print('The number does not have 6 digits')
+
+
+# # 13
+# # Take a number as input and verify if it is odd or even
+# #
+# x = int(input('Choose a number: '))
 # if x % 2 == 0:
-#     print('par')
+#     print('The number is even')
 # else:
-#     print('impar')
-#
-# # 4 (optional)
-# # Avand trei variabile x, y, z (toate int) afiseaza in consola care este cel mai mare dintre ele
+#     print('The number is odd')
+
+
+# # 14
+# # Take three integers from input and display which one of them is the highest
+# #
 # x = int(input('x = '))
 # y = int(input('y = '))
 # z = int(input('z = '))
 # if x > y and x > z:
-#     print(f'dintre {x, y, z} cel mai mare numar este {x}')
+#     print(f'Out of {x, y, z} the highest number is {x}')
 # elif y > z:
-#     print(f'dintre {x, y, z} cel mai mare numar este {y}')
+#     print(f'Out of {x, y, z} the highest number is {y}')
 # else:
-#     print(f'dintre {x, y, z} cel mai mare numar este {z}')
-#
-# # 5 (optional)
-# # Presupunand ca x, y, z - reprezinta unghiurile unui triunghi, verifica si afiseaza daca triunghiul este valid sau nu (un triunghi este valid daca suma tuturor unghiurilor este de 180 de grade sau daca suma lungimilor a oricare doua laturi este mai mare decat lungimea celei de-a treia laturi)
-# a + b + c = 180 or a + b > c / a + c > b / b + c > a
+#     print(f'Out of {x, y, z} the highest number is {z}')
+
+
+# # 15
+# # Take three integers from input and imagine these are the angles of a triangle. Verify and display if the triangle is valid or not.
+# #
 # x = int(input('x = '))
 # y = int(input('y = '))
 # z = int(input('z = '))
 # if x + y + z == 180:
-#     print('Triunghi valid')
+#     print('Valid triangle')
 # elif x > z and y > z:
-#     print('Triunghi valid')
+#     print('Valid triangle')
 # else:
-#     print('Triunghi invalid')
-#
-# # 6 (optional)
-# # Avand stringul: 'Coral is either the stupidest animal or the smartest rock' citește de la tastatura un număr x de tip int și afișează stringul fără ultimele x caractere. ex: dacă ați ales 7 se va afisa urmatorul string: 'Coral is either the stupidest animal or the smarte'
-# x = int(input('Cate caractere vrei sa scazi?: '))
-# str = 'Coral is either the stupidest animal or the smartest rock'
-# print(str[0:-x])
-#
-# # 7 (optional)
-# # Folosindu-te de același string de la exercițiul 6, declara un string nou care sa fie format din primele 5 caractere + ultimele 5
-# x = 'Coral is either the stupidest animal or the smartest rock'
-# y = x[0:5] + x[-5:]
-# print(y)
-#
-# # 8 (optional)
-# # Folosindu-te de același string de la exercițiul 6, salvează într-o variabila și afiseaza indexul de start al cuvântului rock - adică poziția in string la care începe cuvântul rock (hint: este o funcție care te ajuta sa faci asta). Folosind aceasta variabila + slicing, afișează tot stringul pana la acest cuvant. Output asteptat: 'Coral is either the stupidest animal or the smartest '
-# x = 'Coral is either the stupidest animal or the smartest rock'
-# y = len(x) - 4
-# z = x[y:]
-# print(x[:y])
-#
-# # 9 (optional)
-# # Citeste de la tastatura un string si verifica daca primul și ultimul caracter sunt la fel. Se va folosi un assert. Atentie: se dorește ca programul sa fie case insensitive, adica 'apA' e acceptat ca un string in care primul si ultimul caracter este la fel (hint, te poti folosi de o functie pentru a face string-ul case insensitive)
-# x = input('Scrie un cuvant: ').upper()
-# assert x[0] == x[-1]
-# print('corect')
-#
-# # 10 (optional)
-# # Avand stringul '0123456789' afiseaza doar numerele pare si apoi doar numerele impare (hint: foloseste slicing si controleaza afisarea in slicing cu slicing step)
+#     print('Invalid triangle')
+
+
+# # 16
+# # Consider the string: 'Coral is either the stupidest animal or the smartest rock'.
+# # Take a number as input and display the string with that number of missing characters from the end of it.
+# #
+# string = 'Coral is either the stupidest animal or the smartest rock'
+# x = int(input('How many characters are cut from the end?: '))
+# print(string[0:-x])
+
+
+# # 17
+# # Consider the string: 'Coral is either the stupidest animal or the smartest rock'.
+# # Declare a new string that is made out of the first 5 and the last 5 characters of the string.
+# #
+# string = 'Coral is either the stupidest animal or the smartest rock'
+# new_string = string[0:5] + string[-5:]
+# print(new_string)
+
+
+# # 18
+# # Consider the string: 'Coral is either the stupidest animal or the smartest rock'.
+# # Save in a new variable the starting index of the word 'rock' and then display the string without the word.
+# #
+# string = 'Coral is either the stupidest animal or the smartest rock'
+# index_cut = len(string) - 4
+# saved_word = string[index_cut:]
+# print(string[:index_cut])
+
+
+# # 19
+# # Take a string as input and verify with an assert method if the first and last characters are the same, while making the program case insensitive.
+# #
+# string = input('Type a string: ').upper()
+# assert string[0] == string[-1]
+# print('The first and last characters are the same')
+
+
+# # 20
+# # Consider the string: '0123456789'. First display the even numbers and then the odd ones.
+# #
 # x = '0123456789'
 # print(x[2::2], x[1::2])
-# ______sau______ (limiteaza pana la 10 caractere, din 2 in 2)
-# stringul = '0123456789'
-# print(stringul[2:10:2])
-# print(stringul[1:10:2])
-#
-#
-# # 1 (bonus)
-# # 1. Daca pers are varsta peste 18 ani si are pasaport
-# # 2. Daca pers are sub 18 ani, are pasaport si e insotita de ambii parinti
-# # 3. Daca pers are sub 18 ani, are pasaport, e insotita de cel putin un parinte si are permisiune in scris de la celalat parinte
-# a = int(input('Varsta: '))
-# b = input('Insotit de mama? (da/nu) ')
-# c = input('Insotit de tata? (da/nu) ')
-# d = input('Pasaport (da/nu) ')
-# e = input('Act permisiune mama? (da/nu) ')
-# f = input('Act permisiune tata? (da/nu) ')
-# if a >= 18 and d.lower() == 'da':
-#     print(f'Varsta {a} ani, am pasaport => Ma pot imbarca')
-# elif a < 18 and d.lower() == 'da' and c.lower() == 'da' and b.lower() == 'da':
-#     print(f'Varsta {a} ani, am pasaport, ambii parinti, fara acte de permisiune => Ma pot imbarca')
-# elif a < 18 and d.lower() == 'da' and (b.lower() == 'da' or e.lower() == 'da') and (c.lower() == 'da' or f.lower() == 'da'):
-#     print(f'Varsta {a} ani, am pasaport, cel putin un parinte si un actul de permisune al celuilalt => Ma pot imbarca')
+
+
+# # 21
+# # A person can board the plane if either of the conditions below are met:
+# # 1. They have over 18 years old and a passport
+# # 2. They have under 18 years old, a passport, accompanied by both parents
+# # 3. They have under 18 years old, a passport, accompanied by one parent and written approval from the other
+# #
+# a = int(input('Age: '))
+# b = input('Accompanied by the mother? (yes/no) ')
+# c = input('Accompanied by the father? (yes/no) ')
+# d = input('Passport (yes/no) ')
+# e = input('Approval from the mother? (yes/no) ')
+# f = input('Approval from the father? (yes/no) ')
+# if a >= 18 and d == 'yes':
+#     print(f'Age is {a} years old, has passport => can board!')
+# elif a < 18 and d == 'yes' and c == 'yes' and b == 'yes':
+#     print(f'Age is {a} years old, has passport, both parents, no approvals needed => can board!')
+# elif a < 18 and d == 'yes' and (b == 'yes' and f == 'yes') or (c == 'yes' and e == 'yes'):
+#     print(f'Age is {a} years old, has passport, at least one parent and the other one\'s approval => can board!')
 # else:
-#     print('Nu ma pot imbarca fie din lipsa pasaportului, a unui parinte sau a unui act de permisiune in cazul in care sunt minor/a')
-#
-# sau_________________________________________(fara .lower() si inversat al elif)
-#
-# a = int(input('Varsta: '))
-# b = input('Insotit de mama? (da/nu) ')
-# c = input('Insotit de tata? (da/nu) ')
-# d = input('Pasaport (da/nu) ')
-# e = input('Act permisiune mama? (da/nu) ')
-# f = input('Act permisiune tata? (da/nu) ')
-# if a >= 18 and d == 'da':
-#     print(f'Varsta {a} ani, am pasaport => Ma pot imbarca')
-# elif a < 18 and d == 'da' and c == 'da' and b == 'da':
-#     print(f'Varsta {a} ani, am pasaport, ambii parinti, fara acte de permisiune => Ma pot imbarca')
-# elif a < 18 and d == 'da' and (b == 'da' and f == 'da') or (c == 'da' and e == 'da'):
-#     print(f'Varsta {a} ani, am pasaport, cel putin un parinte si actul de permisune al celuilalt => Ma pot imbarca')
-# else:
-#     print('Nu ma pot imbarca fie din lipsa pasaportului, a unui parinte sau a unui act de permisiune in cazul in care sunt minor/a')
-#
-#
-# # 2 (bonus)
-# # Joc de noroc
+#     print('The passenger cannot board due to either missing the passport, a parent or an approval in case they are underage')
+
+
+# # 22
+# # Python game: Guess the dice roll
+# #
 # import random
 # dice_roll = (random.randint(1, 6))
-# x = int(input('Alege un numar: '))
-# if x == dice_roll:
-#     print(f'Ai ghicit! Felicitari! Ai ales {x} si zarul a fost {dice_roll}')
-# elif x > dice_roll:
-#     print(f'Ai pierdut. Ai ales un numar mai mare. Ai ales {x} dar a fost {dice_roll}')
+# number = int(input('Pick a number: '))
+# if number == dice_roll:
+#     print(f'You guessed right! Congratulations! You picked {number} and the dice was {dice_roll}')
+# elif dice_roll < number <= 6:
+#     print(f'You lost. Your number was higher. You picked {number} and the dice was {dice_roll}')
+# elif number < dice_roll and number <= 6:
+#     print(f'You lost. Your number was lower. You picked {number} and the dice was {dice_roll}')
 # else:
-#     print(f'Ai pierdut. Ai ales un numar mai mic. Ai ales {x} dar a fost {dice_roll}')
-#
-# sau_________________________________________(cu limitare intre 1 si 6 numere la input)
-#
-# import random
-# dice_roll = (random.randint(1, 6))
-# x = int(input('Alege un numar: '))
-# if x == dice_roll:
-#     print(f'Ai ghicit! Felicitari! Ai ales {x} si zarul a fost {dice_roll}')
-# elif x > dice_roll and x <= 6:
-#     print(f'Ai pierdut. Ai ales un numar mai mare. Ai ales {x} dar a fost {dice_roll}')
-# elif x < dice_roll and x <= 6:
-#     print(f'Ai pierdut. Ai ales un numar mai mic. Ai ales {x} dar a fost {dice_roll}')
-# else:
-#     print('Alege doar numere intre 1 si 6')
+#     print('Only numbers from 1 to 6 can be picked')
 
 
 
