@@ -38,6 +38,7 @@
 # print(f'His current score is {score} out of 10.')
 # print(f'Does he own any medals? {medal}!')
 
+
 # # 6
 # # Take a first name as input.
 # # Take a surname as input.

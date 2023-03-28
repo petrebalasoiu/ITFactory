@@ -1,0 +1,177 @@
+1680017407988	geckodriver	INFO	Listening on 127.0.0.1:51450
+1680017408481	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51451" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileVVAAio"
+1680017413198	geckodriver	INFO	Listening on 127.0.0.1:51463
+1680017413696	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51464" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileeVljiq"
+1680017416503	geckodriver	INFO	Listening on 127.0.0.1:51469
+1680017416981	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51470" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilect5dI9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017418721	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017418735	Marionette	INFO	Listening on port 51476
+Read port: 51476
+WebDriver BiDi listening on ws://127.0.0.1:51470
+1680017419391	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilect5dI9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51470/devtools/browser/9284eb3a-cff6-4639-9d34-8c19e8466c61
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1680017434485	Marionette	INFO	Stopped listening on port 51476
+Dynamically enable window occlusion 1
+[Parent 33352, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1680017445078	geckodriver	INFO	Listening on 127.0.0.1:51574
+1680017445568	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51575" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofile21krx9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017446454	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017446464	Marionette	INFO	Listening on port 51583
+Read port: 51583
+WebDriver BiDi listening on ws://127.0.0.1:51575
+1680017446854	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofile21krx9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51575/devtools/browser/256227b2-6cdf-4118-9b8b-5aff4f3b79ab
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 31204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1680017457362	Marionette	INFO	Stopped listening on port 51583
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1680017468163	geckodriver	INFO	Listening on 127.0.0.1:51646
+1680017468674	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilerDGzyX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017469786	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017469800	Marionette	INFO	Listening on port 51652
+Read port: 51652
+WebDriver BiDi listening on ws://127.0.0.1:51647
+1680017470355	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilerDGzyX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51647/devtools/browser/3377e431-158f-4b8c-899d-a9c7ccd70703
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.emag.ro."
+1680017484407	Marionette	INFO	Stopped listening on port 51652
+Dynamically enable window occlusion 1
+1680017515798	geckodriver	INFO	Listening on 127.0.0.1:51720
+1680017516290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51721" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofile81HMno"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017517027	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017517034	Marionette	INFO	Listening on port 51726
+Read port: 51726
+WebDriver BiDi listening on ws://127.0.0.1:51721
+1680017517370	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofile81HMno\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51721/devtools/browser/fbadc5e0-f902-4200-8487-76356890294e
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1680017527030	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1680017528577	Marionette	INFO	Stopped listening on port 51726
+Dynamically enable window occlusion 1
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1680017539841	geckodriver	INFO	Listening on 127.0.0.1:51789
+1680017540352	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51790" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileLfnLfX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017541261	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017541269	Marionette	INFO	Listening on port 51795
+Read port: 51795
+WebDriver BiDi listening on ws://127.0.0.1:51790
+1680017541707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileLfnLfX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51790/devtools/browser/9265f350-ca86-449b-8d1c-d0b5d18ef943
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/aid_script-508bf293befa47d64242.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1680017553803	Marionette	INFO	Stopped listening on port 51795
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1680017564508	geckodriver	INFO	Listening on 127.0.0.1:51869
+1680017565006	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51870" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileHEFfKi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017565779	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017565788	Marionette	INFO	Listening on port 51875
+Read port: 51875
+WebDriver BiDi listening on ws://127.0.0.1:51870
+1680017566125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileHEFfKi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51870/devtools/browser/b9387fe4-e245-4378-b1bf-afeca1420acc
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1680017577430	Marionette	INFO	Stopped listening on port 51875
+[Parent 18984, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+[Parent 18984, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+1680017588503	geckodriver	INFO	Listening on 127.0.0.1:51944
+1680017588999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51945" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilelB2983"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017590048	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017590060	Marionette	INFO	Listening on port 51950
+Read port: 51950
+WebDriver BiDi listening on ws://127.0.0.1:51945
+1680017590530	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofilelB2983\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51945/devtools/browser/b89f55bc-2b74-43c8-b276-7506bc85370d
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+1680017602038	Marionette	INFO	Stopped listening on port 51950
+Dynamically enable window occlusion 1
+1680017612044	geckodriver	INFO	Listening on 127.0.0.1:52012
+1680017612526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52013" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileIEjOie"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680017613350	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680017613358	Marionette	INFO	Listening on port 52018
+Read port: 52018
+WebDriver BiDi listening on ws://127.0.0.1:52013
+1680017613678	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\PETREB~1\\AppData\\Local\\Temp\\rust_mozprofileIEjOie\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52013/devtools/browser/0bbc57a0-a4de-42c4-b237-210a9e989c6c
+JavaScript warning: https://s13emagst.akamaized.net/assets/ro/js/main_script-16de3f52cc0b9951a629.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.jsm", 603))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.emag.ro."
+1680017625783	Marionette	INFO	Stopped listening on port 52018
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 576: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+Dynamically enable window occlusion 1

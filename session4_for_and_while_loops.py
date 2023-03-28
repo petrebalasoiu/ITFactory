@@ -1,236 +1,242 @@
-# masini = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
-
 # # 1
-# # Folosește un for că să iterezi prin toată lista și să afișezi: ‘Mașina mea preferată este x’
-# for i in range(len(masini)):
-#     print(f'Masina mea preferata este {masini[i]}')
-# # Folosește un for each că să iterezi prin toată lista și să afișezi: ‘Mașina mea preferată este x’
-# for masina in masini:
-#     print(f'Masina mea preferata este {masina}')
-# # Folosește un while că să iterezi prin toată lista și să afișezi: ‘Mașina mea preferată este x’
+# # Having the list below:
+# # a. Use a for loop to iterate through the entire list and print out 'My favourite car is {x}'
+# # b. Use a for each loop to iterate through the entire list and print out 'My favourite car is {x}'
+# # c. User a while loop to iterate through the entire list and print out 'My favourite car is {x}'
+# #
+# cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
+# # a.
+# for i in range(len(cars):
+#     print(f'My favourite car is {cars[i]}')
+# # b.
+# for car in cars:
+#     print(f'My favourite car is {car}')
+# # c.
 # i = 0
-# while i < len(masini):
-#     print(f'Masina mea preferata este {masini[i]}')
+# while i < len(cars):
+#     print(f'My favourite car is {cars[i]}')
 #     i += 1
 
-# # 2 - Aceeasi lista
-# # Folosește un for else
-# # În for: Modifică elementele din listă astfel încât să fie scrie cu majuscule, exceptând primul și ultimul.
-# # În else: Printează lista.
-# new_list = []
-# for masina in masini[1:-1]:
-#     masina = masina.upper()
-#     new_list.append(masina)
-# else:
-#     print(new_list)
 
-# # 3 - Aceeasi lista
-# # Vine un cumpărător care dorește să cumpere un Mercedes.
-# # Itereaza prin ea prin modalitatea aleasă de tine.
-# # Dacă mașina e mercedes:
-# # - Printează ‘am găsit mașina dorită de dvs’
-# # - Ieși din ciclu folosind un cuvânt cheie care face acest lucru
-# # Altfel:
-# # - Printează ‘Am găsit mașina X. Mai căutam‘
-# for masina in masini:
-#     if masina == 'Mercedes':
-#         print('Am gasit masina dorita de dumneavoastra.')
+# # 2
+# # Having the same list use a for else
+# # In for: Modify the elements in the list so that they are written in all caps except the first and the last.
+# # In else: Print the list
+# #
+# cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
+# x = len(cars)
+# for i in range(x - 1):
+#     cars[i] = cars[i].upper()
+#     cars[0] = cars[0].lower()
+#     cars[x - 1] = cars[x - 1].lower()
+#     i = i + 1
+# else:
+#     print(cars)
+
+
+# # 3
+# # Having the same list
+# # A buyer wants the buy a Mercedes
+# # Iterate through the list with a for loop until the car is found and print a message to confirm it
+# #
+# cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
+# for car in cars:
+#     if car == 'Mercedes':
+#         print('We found the Mercedes!')
 #         break
 #     else:
-#         print(f'Am gasit masina {masina}. Mai cautam')
+#         print(f'We found a {car}. We\'ll keep looking')
 
-# # 4 - Aceeasi lista
-# # Vine un cumpărător bogat dar indecis. Îi vom prezenta toate mașinile cu excepția Trabant și Lăstun.
-# # - Dacă mașina e Trabant sau Lăstun:
-# # Folosește un cuvânt cheie care să dea skip la ce urmează (nu trebuie else).
-# # Printează S-ar putea să vă placă mașina x.
-# for masina in masini:
-#     if masina == 'Trabant' or masina == 'Lastun':
+
+# # 4
+# # Having the same list
+# # A rich buyer wants to buy one of the expensive cars only. Hence, skip the Trabant and Lastun.
+# #
+# cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
+# for car in cars:
+#     if car == 'Trabant' or car == 'Lastun':
 #         continue
-#     print(f'S-ar putea sa va placa masina {masina}.')
+#     print(f'You might like a {car}')
 
-# # 5 - Modernizeaza parcul de masini
-# # ● Creaza o listă goală, masini_vechi.
-# # ● Itereaza prin mașini.
-# # ● Cand găsesti Lăstun sau Trabant:
-# # - Salvează aceste masini în masini_vechi.
-# # - Suprascrie-le cu ‘Tesla’ (în lista inițială de mașini).
-# # ● Printează Modele vechi: x.
-# # ● Modele noi: x.
-# masini_vechi = []
-# for masina in masini:
-#     if masina == 'Trabant' or masina == 'Lastun':
-#         masini.remove('Trabant')
-#         masini.remove('Lastun')
-#         masini.append('Tesla')
-#         masini_vechi.append('Trabant')
-#         masini_vechi.append('Lastun')
-#         print(f'Modele vechi: {masini_vechi}')
-#         print(f'Modele noi: {masini})
 
-# # 6 - Avand dict:
-# pret_masini = {
+# # 5
+# # Replace the cheap cars (Trabant and Lastun) with two Tesla and print the old models and the current models
+# #
+# cars = ['Audi', 'Volvo', 'BMW', 'Mercedes', 'Aston Martin', 'Lastun', 'Fiat', 'Trabant', 'Opel']
+# old_cars = []
+# for car in cars:
+#     if car == 'Trabant' or car == 'Lastun':
+#         cars.remove('Trabant')
+#         cars.remove('Lastun')
+#         cars.append('Tesla')
+#         cars.append('Tesla')
+#         old_cars.append('Trabant')
+#         old_cars.append('Lastun')
+#         print(f'Old models: {old_cars}')
+#         print(f'Current models: {cars}')
+
+
+# # 6
+# # Having a dictionary with car models, prices and a budget
+# # Display only the cars that are within the budget
+# # Iterate through the dict.items() and access the car with its price
+# #
+# car_prices = {
 #     'Dacia': 6800,
 #     'Lastun': 500,
 #     'Opel': 1100,
 #     'Audi': 19000,
 #     'BMW': 23000
 #     }
-# buget = 15000
-# # Prezintă doar mașinile care se încadrează în acest buget.
-# # Itereaza prin dict.items() și accesează mașina și prețul.
-# # Printează Pentru un buget de sub 15000 euro puteți alege mașină xLastun
-# # Iterează prin listă.
+# budget = 15000
 #
-# for masini in pret_masini:
-#     if pret_masini[masini] < buget:
-#         print(masini)
+# for cars in car_prices:
+#     if car_prices[cars] < budget:
+#         print(cars)
 #
-# for masini in pret_masini.items():
-#     print(masini)
+# for cars in car_prices.items():
+#     print(cars)
 #
-# for masini in pret_masini:
-#     if pret_masini[masini] < buget:
-#         print(f'Pentru un buget de sub 15,000 euro puteti alege masina {masini}')
+# for cars in car_prices:
+#     if car_prices[cars] < budget:
+#         print(f'For a budget under 15,000 euros you could choose car {cars}')
 #
-# for masini in pret_masini:
-#     print(masini)
+# for cars in car_prices:
+#     print(cars)
 
-# # 7 - Avand lista:
-# # ● Iterează prin ea.
-# # ● Afișează de câte ori apare 3 (nu ai voie să folosești count).
-# numere = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
-# duplicate = []
-# for numar in numere:
-#     if numar == 3:
-#         duplicate.append(1)
-# print(len(duplicate))
-# # ___ sau ___
-# numere = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
-# duplicate = 0
-# for numar in numere:
-#     if numar == 3:
-#         duplicate += 1
-# print(duplicate)
 
-# # 8 - Avand lista:
-# # ● Iterează prin ea
-# # ● Calculează și afișează suma numerelor (nu ai voie să folosești sum).
-# numere = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
-# suma = 0
-# for numar in numere:
-#     suma += numar  #  nimic = nimic + numar
-# print(suma)
+# # 7
+# # Having the list below, iterate through it and display how many times the number 3 appears without using the count method
+# #
+# numbers = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
+# duplicates = 0
+# for number in numbers:
+#     if number == 3:
+#         duplicates += 1
+# print(duplicates)
 
-# # 9 - Avand lista:
-# # ● Iterează prin ea.
-# # ● Afișază cel mai mare număr (nu ai voie să folosești max).
-# numere = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
-# maxim = 0
-# for numar in numere:
-#     if numar > maxim:
-#         maxim = numar
-# print(maxim)
 
-# # 10. Aceeași listă:
-# # ● Iterează prin ea.
-# # ● Dacă numărul e pozitiv, înlocuieste-l cu valoarea lui negativă.
-# # Ex: dacă e 3, să devină -3
-# # ● Afișază noua listă.
-# numere = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
-# negative = []
-# for numar in numere:
-#     if numar > 0:
-#         numar = -abs(numar)
-#         negative.append(numar)
-# print(negative)
+# # 8
+# # Having the list below, iterate through it and display the sum of the elements without using the sum method
+# #
+# numbers = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
+# sum = 0
+# for number in numbers:
+#     sum += number
+# print(sum)
 
-# # 11 sau 1 (optional)
-# # Itereaza prin listă alte_numere
-# # Populează corect celelalte liste
-# # Afișeaza cele 4 liste la final
 
-# alte_numere = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3]
-# numere_pare = []
-# numere_impare = []
-# numere_pozitive = []
-# numere_negative = []
-# for numar in alte_numere:
-#     if numar > 0:
-#         numere_pozitive.append(numar)
-#     if numar < 0:
-#         numere_negative.append(numar)
-#     if numar % 2 == 0:
-#         numere_pare.append(numar)
-#     if numar % 2 != 0:
-#         numere_impare.append(numar)
-# print(f'Numere pare: {numere_pare}')
-# print(f'Numere impare: {numere_impare}')
-# print(f'Numere pozitive: {numere_pozitive}')
-# print(f'Numere negative: {numere_negative}')
+# # 9
+# # Having the list below, iterate through it and display the highest number without using the max method
+# #
+# numbers = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
+# max = 0
+# for number in numbers:
+#     if number > max:
+#         max = number
+# print(max)
 
-# # 12 sau 2 (optional)
-# # Ordonează crescător lista fară să folosești sort.
-# alte_numere = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3]
-# numere_ordonate = []
-# while alte_numere:
-#     minimum = alte_numere[0]
-#     for numar in alte_numere:
-#         if numar < minimum:
-#             minimum = numar
-#     numere_ordonate.append(minimum)
-#     alte_numere.remove(minimum)
-# print(numere_ordonate)
 
-# # 13 sau 3 (optional)
-# Ghicitoare de număr:
-# numar_secret = Generați un număr random între 1 și 30
-# Numar_ghicit = None
-# Folosind un while
-# User alege un număr
-# Programul îi spune:
-# ● Nr secret e mai mare
-# ● Nr secret e mai mic
-# ● Felicitări! Ai ghicit!
+# # 10
+# # Having the list below, iterate through it and replace the positive numbers with their negative counterparts
+# #
+# numbers = [5, 7, 3, 9, 3, 3, 1, 0, -4, 3]
+# negatives = []
+# for number in numbers:
+#     if number > 0:
+#         number = -abs(number)
+#         negatives.append(number)
+# print(negatives)
+
+
+# # 11
+# # Having the list below, iterate through it and assign each number in their respective lists
+# #
+# other_numbers = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3]
+# even_numbers = []
+# odd_numbers = []
+# positive_numbers = []
+# negative_numbers = []
+# for number in other_numbers:
+#     if number > 0:
+#         positive_numbers.append(number)
+#     if number < 0:
+#         negative_numbers.append(number)
+#     if number % 2 == 0:
+#         even_numbers.append(number)
+#     if number % 2 != 0:
+#         odd_numbers.append(number)
+# print(f'Even numbers: {even_numbers}')
+# print(f'Odd numbers: {odd_numbers}')
+# print(f'Positive numbers: {positive_numbers}')
+# print(f'Negative numbers: {negative_numbers}')
+
+
+# # 12
+# # Having the list below, order the numbers in ascension without using the sort function
+# #
+# other_numbers = [-5, 7, 2, 9, 12, 3, 1, -6, -4, 3]
+# ordered_numbers = []
+# while other_numbers:
+#     minimum = other_numbers[0]
+#     for number in other_numbers:
+#         if number < minimum:
+#             minimum = number
+#     ordered_numbers.append(minimum)
+#     other_numbers.remove(minimum)
+# print(ordered_numbers)
+
+
+# # 13
+# # Guess the number game
+# # secret_number = generate a random number between 1 and 30
+# # guessed_number = None
+# # Using a while loop the user picks a number and the program displays:
+# # The secret number is too high
+# # The secret number is too low
+# # Congratulations! You guessed it right!
+# #
 # import random
-# numar_secret = random.randrange(1, 30)
-# numar_ghicit = int(input("Alege numar: "))
-# while numar_secret != numar_ghicit:
-#     if numar_secret > numar_ghicit:
-#         print("Numarul secret este mai mare")
-#         numar_ghicit = int(input("Alege alt numar: "))
-#     elif numar_secret < numar_ghicit:
-#         print("Numarul secret este mai mic")
-#         numar_ghicit = int(input("Alege alt numar: "))
+# secret_number = random.randrange(1, 30)
+# guessed_number = int(input("Choose a number: "))
+# while secret_number != guessed_number:
+#     if secret_number > guessed_number:
+#         print("The secret number is higher")
+#         guessed_number = int(input("Choose another number: "))
+#     elif secret_number < guessed_number:
+#         print("The secret number is lower")
+#         guessed_number = int(input("Choose another number: "))
 #     else:
 #         break
-# print("Felicitari! Ai ghicit!")
+# print("Congratulations! You guessed it right!")
 
-# # 14 sau 4 (optional)
-# # Scrie un program care să genereze în consolă următoarea piramidă
-# # Ex:3
+
+# # 14
+# # Write a program that generates the following pyramid in the console:
 # # 1
 # # 22
 # # 333
-# x = int(input("Alege un numar: "))
+# #
+# x = int(input("Choose a number: "))
 # for i in range(x + 1):
 #     for j in range(i):
 #         print(i, end='')
 #     print('')
 
-# # 15 sau 5 (optional)
+
+# # 15
+# # Iterate through the following list 2D and print 'The current number is {x}'
+# #
 # tastatura_telefon = [
 #     [1, 2, 3],
 #     [4, 5, 6],
 #     [7, 8, 9],
 #     [0]
 # ]
-# for list in tastatura_telefon:
-#     for number in list:
-#         print(f'Cifra curenta este {number}')
-#
-#
-# test
+# for x in tastatura_telefon:
+#     for y in x:
+#         print(f'The current number is {y}')
+
 
 
 

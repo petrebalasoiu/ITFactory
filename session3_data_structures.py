@@ -1,260 +1,215 @@
 # # 1
-# # Declara o lista note_muzicale in care sa pui do re mi etc pana la do
-# # a. Afiseaz-o
-# # b. Inversează ordinea folosind slicing si suprascrie aceasta lista, apoi printeaza varianta actuala (inversata)
-# # c. Pe aceasta lista, aplica o metoda care banuiesti ca face același lucru, adica sa ii inverseze ordinea (Nu trebuie sa o suprascrii în acest caz, deoarece metoda face asta automat) si apoi printeaza varianta actuala a listei. Practic ai ajuns înapoi la varianta inițială
-# # Concluzii: slicing e temporar, dacă vrei sa pastrezi noua varianta va trebuie sa suprascrii lista sau sa o salvezi intr-o listă nouă. Metoda gasita de tine face suprascrierea automat și permanentizeaza aceste modificări. Ambele variante își găsesc utilitatea în funcție de ce ne dorim in acel moment.
-# note_muzicale = ['do', 're', 'mi', 'fa', 'sol', 'la', 'si', 'do']
-# print(note_muzicale)
-# note_muzicale = note_muzicale[::-1]
-# print(note_muzicale)
-# note_muzicale.reverse()
-# print(note_muzicale)
-#
+# # Declare a list musical_notes which includes the notes from do to do
+# # a. Print it
+# # b. Reverse the order using slicing and overwrite it then print the reversed version
+# # c. Use a method to reverse the order to its original state
+# #
+# musical_notes = ['do', 're', 'mi', 'fa', 'sol', 'la', 'si', 'do']
+# print(musical_notes)
+# musical_notes = musical_notes[::-1]
+# print(musical_notes)
+# musical_notes.reverse()
+# print(musical_notes)
+
+
 # # 2
-# # Afiseaza pe ecran de cate ori apare nota ‘do’ in lista.
-# print(note_muzicale.count('do'))
-#
+# # Print how many times the 'do' note appears in the list
+# #
+# print(musical_notes.count('do'))
+
+
 # # 3
-# # Avand 2 liste, [3, 1, 0, 2] si [6, 5, 4], gaseste 2 variante sa le unesti intr-o singura lista.
+# # Having 2 lists, [3, 1, 0, 2] and [6, 5, 4], find 2 ways to merge them into one list
+# #
 # x = [3, 1, 0, 2]
 # y = [6, 5, 4]
 # z = x + y
 # print(z)
 # x.extend(y)
 # print(x)
-#
+
+
 # # 4
-# # Sorteaza si afiseaza lista generata la exercitiul anterior. Sterge numarul 0 din lista folosind o functie si apoi afiseaza din nou lista
+# # Sort and print the list from the previous exercise. Remove the number 0 from the list using a function then print the list again
+# #
 # z = [3, 1, 0, 2, 6, 5, 4]
 # z.sort()
 # z.pop(0)
 # print(z)
-#
+
+
 # # 5
-# # Folosind un if, verifica lista generata la exercitiul 3 si afiseaza pe fiecare ramura urmatoarele:
-# # - Lista este goala (IF)
-# # - Lista nu este goala (ELSE)
+# # Using an if statement, verify if the list generated at the exercise 3 is either empty or not
+# #
 # z = [3, 1, 0, 2, 6, 5, 4]
 # if len(z) == 0:
-#     print('Lista este goala')
+#     print('The list is empty')
 # else:
-#     print('Lista nu este goala')
-#
+#     print('The list is not empty')
+
+
 # # 6
-# # Foloseste o functie care sa goleasca lista de la exercitiul 3
+# # Use a function to completely empty the list generated at the exercise 3
+# #
 # z = [3, 1, 0, 2, 6, 5, 4]
 # z.clear()
 # print(z)
-#
+
+
 # # 7
-# # Rescrie if-ul de la exercitiul 5 si verifica inca o data rezultatul. Acum ar trebui sa se afiseze ca lista e goala
+# # Reuse the code in the exercise 5 to verify again the result. Now it should print that the list is empty
+# #
 # z = [3, 1, 0, 2, 6, 5, 4]
 # z.clear()
 # if len(z) == 0:
-#     print('Lista este goala')
+#     print('The list is empty')
 # else:
-#     print('Lista nu este goala')
-#
+#     print('The list is not empty')
+
+
 # # 8
-# # Avand dictionarul dict1 = {'Ana' : 8, 'Gigel' : 10, 'Dorel' : 5}, foloseste o functie ca sa afisezi Elevii (cheile)
+# # Having the following dictionary dict1 = {'Mary' : 8, 'Andrew' : 10, 'John' : 5}, use a function to display the students (the Keys)
 # dict1 = {
-#     'Ana': 8,
-#     'Gigel': 10,
-#     'Dorel': 5
+#     'Mary': 8,
+#     'Andrew': 10,
+#     'John': 5
 # }
 # print(dict1.keys())
-#
+
+
 # # 9
-# # Printeaza cei 3 elevi din dictionarul de mai sus si respectiv notele lor
-# # Ex: ‘Ana a luat nota {x}’.
-# # Doar nota o vei lua folosindu-te de cheie
-# dict1 = {
-#     'Ana': 8,
-#     'Gigel': 10,
-#     'Dorel': 5
-# }
-# x = dict1['Ana']
-# y = dict1['Gigel']
-# z = dict1['Dorel']
-# print(f'Ana a luat nota {x}.')
-# print(f'Gigel a luat nota {y}.')
-# print(f'Dorel a luat nota {z}.')
-#
-# # 10
-# # Imagineaza-ti ca Dorel a facut contestatie si a primit nota 6.
-# # - Modifica nota lui Dorel in 6
-# # - Printeaza nota lui dupa modificare
-# dict1 = {
-#     'Ana': 8,
-#     'Gigel': 10,
-#     'Dorel': 5
-# }
-# dict1.update({'Dorel': 6})
-# print(dict1['Dorel'])
-#
-# # 11
-# # Imagineaza-ti ca Gigel se transfera din clasa.
-# # - Cauta o functie care sa il stearga
-# # - Vine un coleg nou. Adaugati-l in lista pe Ionica, cu nota 9
-# # - Printati dictionarul cu noii elevi
-# dict1 = {
-#     'Ana': 8,
-#     'Gigel': 10,
-#     'Dorel': 5
-# }
-# del dict1['Gigel']
-# dict1.update({'Ionel': 9})
-# print(dict1)
-#
-# # 12
-# # Ai urmatoarele seturi:
-# # zile_sapt = {'luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica'}
-# # weekend = {'sambata', 'duminica'}
-# # - Incearca sa adaugi in setul zilele_sapt ziua de ‘luni’ si observa ce se intampla.
-# # - Afiseaza setul zile_sapt si constata rezultatul adaugarii anterioare.
-# zile_sapt = {'luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica'}
-# weekend = {'sambata', 'duminica'}
-# zile_sapt.add('luni')
-# print(zile_sapt)
-# # string-ul 'luni' nu a fost adaugat doarece set-urile nu accepta duplicate
-#
-# # 13
-# # Foloseste un if si verifica daca:
-# # - Weekend este un subset al zilelor din sapt (adica daca elementele din setul weekend se regasesc intre elementele din setul zile_sapt)
-# # - Weekend nu este un subset al zilelor din sapt
-# # Hint: Va puteti folosi fie de operatorul de comparatie fie de o functie. Rezultatul fiecarui punct de mai sus va fi un boolean
-# zile_sapt = {'sambata', 'duminica',}
-# weekend = {'sambata', 'duminica'}
-# if weekend < zile_sapt: # de ce operatorul asta?
-#     print(True)
-# else:
-#     print(False)
-# if weekend.issubset(zile_sapt):
-#     print(True)
-# else:
-#     print(False)
-#
-# # 14
-# # Afiseaza diferentele dintre aceste 2 seturi (adica elementele care sunt in zile_sapt si nu sunt in weekend si invers)
-# zile_sapt = {'luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica'}
-# weekend = {'sambata', 'duminica'}
-# x = zile_sapt - weekend
-# y = weekend - zile_sapt
-# print(x)
-# print(y)
-#
-# # 15
-# # Afiseaza intersectia elementelor din aceste 2 seturi (adica elementele care exista in ambele seturi). Hint: Va puteti folosi de o functie
-# zile_sapt = {'luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica'}
-# weekend = {'sambata', 'duminica'}
-# print(zile_sapt.intersection(weekend))
-#
-# # 1 (optional)
+# # Print the students mentioned in the list above and their grades
+# # i.e.: 'Mary received the grade: {x}'
 # #
-# lista_jucatori_teren = ['Marius', 'Adi', 'Dan', 'Alex', 'Bubu']
-# lista_jucatori_rezerva = ['Vlad', 'Gigi', 'Mihai', 'Dorin', 'Alin']
-# lista_jucatori_scosi = []
-# schimbari_efectuate = 1
-# SCHIMBARI_MAX = 3
-#
-# x = str(input('Iese de pe teren: \n'))
-# y = str(input('Intra pe teren: \n'))
-# z = SCHIMBARI_MAX - schimbari_efectuate
-#
-# if x in lista_jucatori_teren and y in lista_jucatori_rezerva and schimbari_efectuate <= SCHIMBARI_MAX:
-#     lista_jucatori_teren.remove(x)
-#     lista_jucatori_rezerva.remove(y)
-#     lista_jucatori_scosi.append(x)
-#     lista_jucatori_teren.append(y)
-#
-#     print(f'A intrat {y}, a iesit {x}, mai aveti {z} schimari.')
-#     print(f'Jucatori pe teren: {lista_jucatori_teren}')
-#     print(f'Jucatori in rezerva: {lista_jucatori_rezerva}')
-#     print(f'Jucatori scosi: {lista_jucatori_scosi}')
-#
-# elif x not in lista_jucatori_teren:
-#     print(f'Nu se poate efectua schimbarea deoarece jucatorul {x} nu este pe teren.')
-#
-# elif y not in lista_jucatori_rezerva:
-#     print(f'Nu se poate efectua schimbarea deoarece jucatorul {y} nu este rezerva.')
-#
+# dict1 = {
+#     'Mary': 8,
+#     'Andrew': 10,
+#     'John': 5
+# }
+# x = dict1['Mary']
+# y = dict1['Andrew']
+# z = dict1['John']
+# print(f'Mary received the grade: {x}')
+# print(f'Andrew received the grade: {y}')
+# print(f'John received the grade: {z}')
+
+
+# # 10
+# # John's grade was given in error, and he actually received a 6
+# # Modify his grade and then print the new one
+# #
+# dict1 = {
+#     'Mary': 8,
+#     'Andrew': 10,
+#     'John': 5
+# }
+# dict1.update({'John': 6})
+# print(dict1['John'])
+
+
+# # 11
+# # John is then transferred to a different classroom
+# # - Use a function to remove him from the dictionary
+# # - A new student is transferred in John's palce, with the grade 9
+# # - Print the updated dictionary that includes the new student
+# #
+# dict1 = {
+#     'Mary': 8,
+#     'Andrew': 10,
+#     'John': 6
+# }
+# del dict1['John']
+# dict1.update({'Mark': 9})
+# print(dict1)
+
+
+# # 12
+# # There are 2 sets:
+# # week_days = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+# # weekend = {'Saturday', 'Sunday'}
+# # Try to add 'Monday' to the week_days set and see what happens
+# # Print the week_days set and observe the behaviour
+# #
+# week_days = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+# week_days.add('Monday')
+# print(week_days)
+# # 'Monday' was not added because sets to not allow duplicates
+
+
+# # 13
+# # Use an if statement to verify if the weekend set is a subset of the week_days set or not
+# #
+# week_days = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+# weekend = {'Saturday', 'Sunday'}
+# if weekend.issubset(week_days):
+#     print(True)
 # else:
-#     print(f'Limita de schimari a fost atinsa')
+#     print(False)
 
-#_______________________________________________________________________________________________________
 
-# Tentativa de For loop cu BUG
-#
-# lista_jucatori_teren = ['Marius', 'Adi', 'Dan', 'Alex', 'Bubu']
-# lista_jucatori_rezerva = ['Vlad', 'Gigi', 'Mihai', 'Dorin', 'Alin']
-# lista_jucatori_scosi = []
-# schimbari_efectuate = 0
-# SCHIMBARI_MAX = 3
-#
-# for i in range(3):
-#     x = str(input('Iese de pe teren: \n'))
-#     y = str(input('Intra pe teren: \n'))
-#
-#     schimbari_efectuate +=1
-#     z = SCHIMBARI_MAX - schimbari_efectuate
-#
-#     if x in lista_jucatori_teren and y in lista_jucatori_rezerva and schimbari_efectuate <= SCHIMBARI_MAX:
-#         lista_jucatori_teren.remove(x)
-#         lista_jucatori_rezerva.remove(y)
-#         lista_jucatori_scosi.append(x)
-#         lista_jucatori_teren.append(y)
-#
-#         print(f'A intrat {y}, a iesit {x}, mai aveti {z} schimari.')
-#         print(f'Jucatori pe teren: {lista_jucatori_teren}')
-#         print(f'Jucatori in rezerva: {lista_jucatori_rezerva}')
-#         print(f'Jucatori scosi: {lista_jucatori_scosi}')
-#
-#     elif x not in lista_jucatori_teren:
-#         print(f'Nu se poate efectua schimbarea deoarece jucatorul {x} nu este pe teren.')
-#
-#     elif y not in lista_jucatori_rezerva:
-#         print(f'Nu se poate efectua schimbarea deoarece jucatorul {y} nu este rezerva.')
-#
-#     else:
-#         print(f'Limita de schimari a fost atinsa')
+# # 14
+# # Display the differences between these two sets (the elements that are in one set but not in the other and viceversa)
+# #
+# week_days = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+# weekend = {'Saturday', 'Sunday'}
+# diff1 = week_days - weekend
+# diff2 = weekend - week_days
+# print(f'{diff1} are not in the weekend set')
+# print(f'{diff2} is empty because the elements found in the weekend set can be also found in week_days set')
 
-#_______________________________________________________________________________________________________
 
-# Corectare cu While loop fara BUG
+# # 15
+# # Display the similarities between these two sets (the elements that can be found in both sets)
+# #
+# week_days = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+# weekend = {'Saturday', 'Sunday'}
+# print(week_days.intersection(weekend))
 
-# lista_jucatori_teren = ['Marius', 'Adi', 'Dan', 'Alex', 'Bubu']
-# lista_jucatori_rezerva = ['Vlad', 'Gigi', 'Mihai', 'Dorin', 'Alin']
-# lista_jucatori_scosi = []
-# schimbari_efectuate = 0
-# SCHIMBARI_MAX = 3
+
+# # 16
+# # Imagine a sports team during a game. Only 3 changes are allowed.
+# # - declare a list with 5 players on the field
+# # - declare a list with 5 players on the bench
+# # - declare an empy list which will collect the players removed from the field
+# # - declare a variable for the changes made (can be any value since you will update it for every run)
+# # - MAX_CHANGES will be a constant with a value of 3
+# #
+# # If the player X is on the field and there are enough changes left:
+# # 	- The replacement takes place if the player Y is on the bench and cannot be found on the field
+# # 	- Player X will then be removed from the field and added to the players' removed list
+# # 	- Player Y will then be added on the field and removed from the bench
+# # 	- The program prints: "X was replaced by Y on the field. There are N changes left"
+# # Else if the player we want to replace is not on the field:
+# # 	- The program prints: "the replacement cannot take place because X is not on the field"
+# # Else, the program prints: "no more changes left"
+# #
+# #
+# players_on_the_field = ['John', 'Tony', 'Alex', 'Greg', 'Bob']
+# players_on_the_bench = ['Kevin', 'Frank', 'Will', 'Ryan', 'Joe']
+# players_removed = []
+# changes_made = 1
+# MAX_CHANGES = 3
 #
-# while len(lista_jucatori_scosi) < 3:
-#     x = str(input('Iese de pe teren: \n'))
-#     y = str(input('Intra pe teren: \n'))
+# removed_player = input('Choose a player to replace: \n')
+# added_player = input('Choose a player from the bench: \n')
+# changes_left = MAX_CHANGES - changes_made
 #
-#     if x in lista_jucatori_teren and y in lista_jucatori_rezerva:
-#         lista_jucatori_teren.remove(x)
-#         lista_jucatori_rezerva.remove(y)
-#         lista_jucatori_scosi.append(x)
-#         lista_jucatori_teren.append(y)
+# if removed_player in players_on_the_field and added_player in players_on_the_bench and changes_made <= MAX_CHANGES:
+#     players_on_the_field.remove(removed_player)
+#     players_on_the_bench.remove(added_player)
+#     players_removed.append(removed_player)
+#     players_on_the_field.append(added_player)
 #
-#         schimbari_efectuate += 1
-#         z = SCHIMBARI_MAX - schimbari_efectuate
+#     print(f'{added_player} has replaced {removed_player} on the field. There are {changes_left} changes left.')
+#     print(f'Current players on the field: {players_on_the_field}')
+#     print(f'Current players on the bench: {players_on_the_bench}')
+#     print(f'Current players removed: {players_removed}')
 #
-#         print(f'A intrat [{y}], a iesit [{x}], mai aveti [{z}] schimari.')
-#         print(f'Jucatori pe teren: {lista_jucatori_teren}')
-#         print(f'Jucatori in rezerva: {lista_jucatori_rezerva}')
-#         print(f'Jucatori scosi: {lista_jucatori_scosi}')
-#
-#     elif x not in lista_jucatori_teren and y not in lista_jucatori_rezerva:
-#         print(f'Nu se poate efectua schimbarea deoarece jucatorul [{x}] nu este pe teren,\nsi nici jucatorul [{y}] nu este rezerva.')
-#
-#     elif x not in lista_jucatori_teren:
-#         print(f'Nu se poate efectua schimbarea deoarece jucatorul [{x}] nu este pe teren.')
-#
-#     elif y not in lista_jucatori_rezerva:
-#         print(f'Nu se poate efectua schimbarea deoarece jucatorul [{y}] nu este rezerva.')
-#
-#     else:
-#         print(f'Limita de schimari a fost atinsa')
+# elif removed_player not in players_on_the_field and added_player not in players_on_the_bench:
+#     print(f'The change cannot be fulfilled because the player [{removed_player}] is not on the field and player [{added_player}] is not on the bench')
+# elif removed_player not in players_on_the_field:
+#     print(f'The change cannot be fulfilled because the player {removed_player} is not on the field.')
+# elif added_player not in players_on_the_bench:
+#     print(f'The change cannot be fulfilled because the player {added_player} is not on the bench.')
+# else:
+#     print(f'There are no more changes available.')

@@ -161,7 +161,7 @@
 
 
 # # 13
-# # Take a number as input and verify if it is odd or even
+# # Take a number from input and verify if it is odd or even
 # #
 # x = int(input('Choose a number: '))
 # if x % 2 == 0:
@@ -264,7 +264,9 @@
 
 
 # # 22
-# # Python game: Guess the dice roll
+# # Python game: Guess the dice roll (1-6)
+# # Generate a random dice roll and compare it to a user's input, then display one of the three options:
+# # the number was higher, the number was lower, the number is matching
 # #
 # import random
 # dice_roll = (random.randint(1, 6))
